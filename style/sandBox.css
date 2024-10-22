@@ -1,0 +1,31 @@
+.carte {
+ max-width: 250px;
+ border-color: gray;
+ border-width: 1px;
+ border-style: solid;
+ /* Coins arrondies */
+ border-radius: 15px;
+ /* les espaces */
+ margin: 10px;
+ padding: 5px;
+ padding-bottom: 10px;
+}
+.carte h1, 
+.carte h2,
+.carte h3 {
+ text-align: center;
+}
+
+.exemple-survol {
+ color:brown;
+ font-size: 20px;
+ text-align: center;
+}
+.exemple-survol:hover {
+	position: relative;
+}
+.exemple-survol:hover:after{
+	content: url(/asset/pokeball.png); /* no need for qoutes */
+ display: block;
+	position: absolute;
+}

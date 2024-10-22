@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta author="robin">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pokedex</title>
+
+ <!-- Les fichiers css pour le style -->
+ <link href="style/index.css" rel="stylesheet">
+</head>
+<body>
+ <nav>
+  <ul>
+   <li><a href="index.html">Accueil</a></li>
+   <li><a href="pokedex.html">Pokédex</a></li>
+   <li><a href="sandBox.html">Le bac à sable</a></li>
+  </ul>
+ </nav>
+
+ <div id="nom-pokemon"></div>
+ <div id="sprite-pokemon"></div>
+ <div class="espace-pour-boutton">
+  <button id="boutton-precedent" class="boutton" onclick="pokemonPrecedent()">Precedent</button>
+  <p id="numeros-actuels">1</p>
+  <button id="boutton-suivant" class="boutton" onclick="pokemonSuivant()">suivant</button>
+ </div>
+ <footer>
+  <p>Projet visant à montrer la création d'un site web</p>
+  <p>Utilisant des requête à la PokeAPI</p>
+  <button id="retour-accueil" onclick="retourAccueil('index.html')">Retour aux instructions</button>
+  
+ </footer>
+
+ <!-- Mes scripts Javascripts = la logique -->
+ <script src="script/pokedex.js"></script>
+</body>
+</html>

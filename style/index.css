@@ -1,0 +1,46 @@
+body {
+ margin: 0px;
+}
+div  {
+ min-height: 25px;
+}
+
+footer {
+ text-align: center;
+ background-color: rgb(100,100,100);
+ color: rgb(200,200,200);
+}
+.espace-pour-boutton {
+ display:flex;
+ justify-content: space-around;
+}
+.boutton {
+ background-color: blue;
+ color: white;
+}
+
+nav ul {
+ display: flex;
+ flex-direction: row;
+ list-style-type: none;
+}
+nav ul li {
+ padding-right: 5px;
+}
+
+/* pour fixer le footer en bas de page*/
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+
+}
+footer {
+	display : table-row;
+	height: 100px; /* à titre d'exemple */
+}
+/**/
+
