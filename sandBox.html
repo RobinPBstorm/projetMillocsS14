@@ -19,22 +19,39 @@
   <h1>Le Bac à sable</h1>
   <p>On trouvera ici certaine demande d'apprenants, testé et appliqué</p>
  </div>
- <section class="row">
+ <section>
   <div class="carte">
    <h2>Image s'affichant en survolant un lien</h2>
    <div class="contenu-carte">
-    <h3>La demande:</h3>
-    <p>Comment faire afficher une image quand passe la souris sur un lien?</p>
-    <h3>Ce qui a été trouvé:</h3>
-    <p>On peut préciser dans le css des "animations" qui s'applique avec la pseudo class :hover.</p>
+      <h3>La demande:</h3>
+      <p>Comment faire afficher une image quand passe la souris sur un lien?</p>
+      <h3>Ce qui a été trouvé:</h3>
+      <p>On peut préciser dans le css des "animations" qui s'applique avec la pseudo class :hover.</p>
 
-    <span class="exemple-survol">Exemple</span>
+      <span class="exemple-survol">Exemple</span>
+    </div>
   </div>
+  <div class="carte">
+    <h2>Un bouton pour changer de page</h2>
+    <div class="contenu-carte">
+      <h3>La demande:</h3>
+      <p>Peut-on changer de page avec un bouton? Comme avec un lien cliquable.</p>
+      <h3>Ce qui a été trouvé:</h3>
+      <p>Pour permettre à un bouton d'avoir le même comportement qu'un lien cliquable (la balise a), on doit passer par du Javascript.<br>
+      D'abord on associe l'événement du clique sur le bouton avec onclick à notre fonction js.<br>
+      Ensuite, indiquer la navigation dans notre fonction Js.<br>
+      On peut donner le nom du fichier ou le lien du site cible n paramètre de la fonction.</p>
+
+      <button id="retour-accueil" onclick="naviguerVers('index.html')">Retour aux instructions</button>
+    </div>
   </div>
+  
+  
  </section>
  <footer>
   <p>Projet visant à montrer la création d'un site web</p>
   <p>Utilisant des requête à la PokeAPI</p>
  </footer>
+ <script src="script/sandBox.js"></script>
 </body>
 </html>

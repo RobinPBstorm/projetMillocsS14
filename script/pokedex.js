@@ -98,7 +98,3 @@ function pokemonPrecedent() {
 }
 
 requeteALaPokeAPI(premierURLPokeAPI);
-
-function retourAccueil(fichierCible){
-    location.href = fichierCible;
-}
